@@ -28,7 +28,7 @@ sealed class FormFieldModel with _$FormFieldModel {
       type: type,
       isRequired: json['required'] as bool? ?? false,
       props: FieldPropsModel.fromJson(
-        (json['props'] as Map<String, dynamic>?) ?? const {},
+        json['props'] is Map<String, dynamic> ? json['props'] : {},
         type,
       ),
       style: json['style'] == null

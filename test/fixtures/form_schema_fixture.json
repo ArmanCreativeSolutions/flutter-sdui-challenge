@@ -1,0 +1,149 @@
+{
+  "fields": [
+    {
+      "label": "برند:",
+      "name": "brand",
+      "type": "input",
+      "required": true,
+      "props": {
+        "type": "text",
+        "placeholder": "برند ماشین را وارد کنید",
+        "color": "#000000",
+        "size": "large",
+        "minLength": 2,
+        "maxLength": 30
+      },
+      "style": {
+        "borderRadius": "5px",
+        "margin": "10px 0",
+        "padding": "8px"
+      }
+    },
+    {
+      "label": "مدل:",
+      "name": "model",
+      "type": "input",
+      "required": true,
+      "props": {
+        "type": "text",
+        "placeholder": "مدل ماشین را وارد کنید",
+        "color": "#000000",
+        "size": "medium"
+      },
+      "style": {
+        "borderRadius": "5px",
+        "margin": "10px 0",
+        "padding": "8px"
+      }
+    },
+    {
+      "label": "سال ساخت:",
+      "name": "year",
+      "type": "input",
+      "required": true,
+      "props": {
+        "type": "number",
+        "placeholder": "سال ساخت را وارد کنید",
+        "min": "1900",
+        "max": "2024"
+      },
+      "style": {
+        "borderRadius": "5px",
+        "margin": "10px 0",
+        "padding": "8px"
+      }
+    },
+    {
+      "label": "نوع سوخت:",
+      "name": "fuel_type",
+      "type": "select",
+      "required": true,
+      "props": {
+        "options": [
+          {
+            "label": "بنزین",
+            "value": "بنزین"
+          },
+          {
+            "label": "گاز",
+            "value": "گاز"
+          },
+          {
+            "label": "دیزل",
+            "value": "دیزل"
+          },
+          {
+            "label": "الکتریکی",
+            "value": "الکتریکی"
+          }
+        ]
+      },
+      "style": {
+        "borderRadius": "5px",
+        "margin": "10px 0",
+        "padding": "8px"
+      }
+    },
+    {
+      "label": "رنگ ماشین:",
+      "name": "color",
+      "type": "input",
+      "required": false,
+      "props": {
+        "type": "text",
+        "placeholder": "رنگ ماشین را وارد کنید"
+      },
+      "style": {
+        "borderRadius": "5px",
+        "margin": "10px 0",
+        "padding": "8px"
+      }
+    },
+    {
+      "label": "تعداد مالکین قبلی:",
+      "name": "previous_owners",
+      "type": "input",
+      "required": false,
+      "props": {
+        "type": "number",
+        "placeholder": "تعداد مالکین قبلی را وارد کنید",
+        "min": "0"
+      },
+      "style": {
+        "borderRadius": "5px",
+        "margin": "10px 0",
+        "padding": "8px"
+      }
+    },
+    {
+      "label": "توضیحات وضعیت فنی:",
+      "name": "technical_condition",
+      "type": "textarea",
+      "required": false,
+      "props": {
+        "placeholder": "توضیحات درباره وضعیت فنی ماشین",
+        "rows": 4,
+        "cols": 50
+      },
+      "style": {
+        "borderRadius": "5px",
+        "margin": "10px 0",
+        "padding": "10px"
+      }
+    },
+    {
+      "label": "تصاویر ماشین:",
+      "name": "car_images",
+      "type": "file",
+      "required": true,
+      "props": {
+        "accept": "image/*",
+        "maxSize": "5MB",
+        "multiple": true
+      },
+      "style": {
+        "margin": "10px 0"
+      }
+    }
+  ]
+}
